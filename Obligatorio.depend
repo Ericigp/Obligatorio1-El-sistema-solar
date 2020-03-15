@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1584290652 source:/home/eiglesias/Documents/Compu/El sistema solar/Obligatorio/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	"Verlet.hpp"
+
+1584287497 /home/eiglesias/Documents/Compu/El sistema solar/Obligatorio/Verlet.hpp
+	<cmath>
+
+1584287483 source:/home/eiglesias/Documents/Compu/El sistema solar/Obligatorio/Verlet.cpp
+	"Verlet.hpp"
+

@@ -1,0 +1,16 @@
+set terminal gif animate delay 83.4
+set output 'Sistema solar.gif'
+
+set xlabel 'X [UA]'
+set ylabel 'Y [UA]'
+
+set xrange [-35:35]
+set yrange [-35:35]
+
+unset key
+
+do for [ii=1:5000] {
+  plot 'Posiciones' u 1:2 every ::ii::ii with circles lc rgb "yellow" t '','' u 3:4 every ::ii::ii  with circles lc rgb "gray0"  t '','' every ::ii::ii u 5:6 with circles lc rgb "orange"  t '','' every ::ii::ii u 7:8 with circles lc rgb "green"  t '','' every ::ii::ii u 9:10 with circles lc rgb "red"  t '','' every ::ii::ii u 11:12 with circles lc rgb "salmon"  t '','' every ::ii::ii u 13:14 with circles lc rgb "gold"  t '','' every ::ii::ii u 15:16 with circles lc rgb "light-blue"  t '','' every ::ii::ii u 17:18 with circles lc rgb "blue"  t ''
+}
+
+
